@@ -1,0 +1,36 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Nardos",
+      "course": "Computer Science"
+    },
+    {
+      "id": "2",
+      "name": "Hana",
+      "course": "Information Technology"
+    },
+    {
+      "id": "3",
+      "name": "Bethelhem",
+      "course": "Software Engineering"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "name": "React Development",
+      "instructor": "Yared Kebede"
+    },
+    {
+      "id": "2",
+      "name": "Web Development",
+      "instructor": "Abebe Bekele"
+    },
+    {
+      "id": "3",
+      "name": "JavaScript",
+      "instructor": "Sara Ahmed"
+    }
+  ]
+}
