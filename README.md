@@ -1,16 +1,106 @@
-# React + Vite
+# Student Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
 
-Currently, two official plugins are available:
+I created this Student Management System using React. The project helps manage students and courses in a simple way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I built this project to practice React concepts such as components, props, state, events, lists, forms, search, React Router, and API CRUD operations.
 
-## React Compiler
+## Technologies I Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript
+* HTML
+* CSS
+* React Router
+* JSON Server
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Dashboard
+
+* Shows the total number of students.
+* Shows the total number of courses.
+
+### Student Management
+
+* View students
+* Add a new student
+* Edit a student
+* Delete a student
+* Search for students
+* Shows the total number of students
+
+### Course Management
+
+* View courses
+* Add a new course
+* Edit a course
+* Delete a course
+* Search for courses
+* Shows the total number of courses
+
+## React Concepts I Used
+
+While making this project, I used:
+
+* Components
+* Props
+* `useState`
+* `useEffect`
+* `.map()`
+* `.filter()`
+* Forms and events
+* React Router
+* API requests using `fetch()`
+* CRUD operations
+
+## Project Structure
+
+```text
+student-management-system
+│
+├── src
+│   ├── components
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── StudentCard.jsx
+│   │   └── CourseCard.jsx
+│   │
+│   ├── pages
+│   │   ├── Dashboard.jsx
+│   │   ├── Students.jsx
+│   │   └── Courses.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── db.json
+├── package.json
+└── README.md
+```
+
+## How to Run the Project
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Start the React application:
+
+```bash
+npm run dev
+```
+
+In another terminal, start the JSON Server:
+
+```bash
+npm run server
+```
+
+The React application and JSON Server need to run at the same time because the application gets the student and course data from the API.
+
