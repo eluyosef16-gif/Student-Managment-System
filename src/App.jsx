@@ -1,12 +1,14 @@
-import Hero from "./components/Hero";
 import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
 import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import Enrollment from "./components/Enrollment";
 import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Sidebar from "./components/Sidebar";
+
 import Dashboard from "./pages/Dashboard";
 import Students from "./pages/Students";
 import Courses from "./pages/Courses";
