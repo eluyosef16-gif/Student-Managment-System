@@ -14,14 +14,14 @@
       "id": "3",
       "name": "Bethelhem",
       "course": "Software Engineering"
+    },
+    {
+      "name": "selam",
+      "course": "derese",
+      "id": "kQSUyyKuyfk"
     }
   ],
   "courses": [
-    {
-      "id": "1",
-      "name": "React Development",
-      "instructor": "Yared Kebede"
-    },
     {
       "id": "2",
       "name": "Web Development",
@@ -31,6 +31,12 @@
       "id": "3",
       "name": "JavaScript",
       "instructor": "Sara Ahmed"
+    },
+    {
+      "name": "java programming",
+      "instructor": "yared kebede",
+      "id": "vcpPfZ9n3v8"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

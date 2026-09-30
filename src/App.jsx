@@ -1,8 +1,12 @@
+import Hero from "./components/Hero";
 import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import { Routes, Route } from "react-router-dom";
-
+import Enrollment from "./components/Enrollment";
+import Testimonial from "./components/Testimonial";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 import Dashboard from "./pages/Dashboard";
 import Students from "./pages/Students";
 import Courses from "./pages/Courses";
@@ -22,43 +26,66 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Navbar />
+    <Routes>
 
-      <Sidebar />
+      {/* HOME PAGE */}
+      <Route
+        path="/"
+        element={
+          <>
+            <Navbar />
+            <Hero />
+            <Enrollment />
+            <Testimonial />
+            <Contact />
+            <Footer />
+          </>
+        }
+      />
 
-      <Routes>
-        <Route
-          path="/"
-          element={
+      {/* DASHBOARD */}
+      <Route
+        path="/dashboard"
+        element={
+          <>
+            <Sidebar />
             <Dashboard
               students={students}
               courses={courses}
             />
-          }
-        />
+          </>
+        }
+      />
 
-        <Route
-          path="/students"
-          element={
+      {/* STUDENTS */}
+      <Route
+        path="/students"
+        element={
+          <>
+            <Sidebar />
             <Students
               students={students}
               setStudents={setStudents}
             />
-          }
-        />
+          </>
+        }
+      />
 
-        <Route
-          path="/courses"
-          element={
+      {/* COURSES */}
+      <Route
+        path="/courses"
+        element={
+          <>
+            <Sidebar />
             <Courses
               courses={courses}
               setCourses={setCourses}
             />
-          }
-        />
-      </Routes>
-    </div>
+          </>
+        }
+      />
+
+    </Routes>
   );
 }
 
